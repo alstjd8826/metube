@@ -7,7 +7,7 @@ import globalRouter from "./routers/globalRouter";
 import videoRouter from "./routers/videoRouters";
 import userRouter from "./routers/userRouters";//유저가 전송하는 데이터를 이해할 수 있게 특정 형태로 처리해 주는 미들웨어
 import routes from "./routes";
-import {localsMiddleware} from "./middleware";
+import {localsMiddleware} from "./middleware";//미들웨어역할 하는 함수 next
 
 
 const app = express();
