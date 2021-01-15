@@ -1,10 +1,10 @@
 doctype html
 html
     head
-        title Metube
+        title #{pageTitle} | #{siteName}
+    include ../views/partials/header
     body
         main
             block content
             //-템플릿 내용이 들어갈 자리
-        footer
-            span &copy; Metube
+        include ../views/partials/footer
