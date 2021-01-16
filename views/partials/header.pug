@@ -1,6 +1,10 @@
 header
     h1.title 
          a(href=routes.home)   #{siteName}
+    //-검색창 활성화, 색 등 단순 작업에는 주로 GET을 사용
+    div.search
+        form(action=routes.search, method="get")
+            input(type="text", placeholder="검색", name="term")
     ul     
         li
             a(href=routes.login) Login
