@@ -1,8 +1,10 @@
 extends layouts/main
+
+
 block content
   .editProfile
     h3 프로필 수정
-    form(action=routes.editProfile, method="post")
+    form(action=`${routes.editProfile}`, method="post")
       label(for="avatar") Avatar 
       input(type="file", id="avatar", name="avatar")
       input(type="text", name="userName", placeholder="이름을 입력하세요.")
